@@ -1,287 +1,358 @@
-[# Building-with-the-Claude-API
-Leaning Building With Claude Api From Anthropic SkillJar
-](https://github.com/chandupradeep18/Building-with-the-Claude-API
-Building-with-the-Claude-API — Repository analysis
+# Building with the Claude API – Generative AI Engineering
 
-Repository: chandupradeep18/Building-with-the-Claude-API
-10 Jupyter notebooks + MCP folder
+A hands-on collection of Python projects and Jupyter notebooks exploring **Anthropic's Claude API, Large Language Models (LLMs), Prompt Engineering, Tool Calling, Retrieval-Augmented Generation (RAG), Multimodal AI, and Model Context Protocol (MCP).**
 
-This repository is a practical learning portfolio based on Anthropic's Claude API and Skilljar learning materials.
+This repository documents my practical learning journey in Generative AI Engineering, focusing on building LLM-powered applications, integrating external tools, implementing retrieval pipelines, and evaluating AI-generated responses.
 
-Unlike your Pandas repository, this one focuses on LLM application development and Generative AI engineering.
-Topics identified
+## 🚀 Project Overview
 
-Area
-	
+The goal of this repository is to understand how modern LLM-powered applications are designed and implemented using Python and different AI model providers.
 
-Topics
+The repository covers the following areas:
 
-Claude API
-	
+- Building conversational AI applications using Claude API.
+- Implementing streaming responses for interactive chatbots.
+- Designing and improving prompts through prompt engineering.
+- Connecting LLMs with external Python functions using tool calling.
+- Working with multimodal inputs such as images and PDFs.
+- Implementing AI-powered text editing workflows.
+- Building Retrieval-Augmented Generation (RAG) pipelines.
+- Exploring embeddings, vector databases, and semantic retrieval.
+- Evaluating prompt outputs and improving response quality.
+- Exploring Model Context Protocol (MCP).
 
-Chatbot development and streaming responses
+## ✨ Project Modules
 
-Prompt Engineering
-	
+### 1. Claude API – Chatbot Development
 
-Prompt design and evaluation
+Learn how to integrate Anthropic's Claude API with Python to build conversational AI applications.
 
-Tool Calling
-	
+**Topics covered:**
 
-Connecting Claude with external functions
+- Claude API initialization.
+- Sending messages using the Messages API.
+- Managing conversation history.
+- System prompts and model parameters.
+- Tracking input and output token usage.
+- Storing conversation history and response details.
 
-RAG
-	
+**Notebook:** `Claude_ai_Chat_Bot.ipynb`
 
-Retrieval-Augmented Generation
+### 2. Streaming AI Responses
 
-Multimodal AI
-	
+Explore how to stream LLM-generated responses instead of waiting for the entire response.
 
-Image and PDF support
+**Topics covered:**
 
-AI Tools
-	
+- Streaming model responses.
+- Handling incremental text generation.
+- Improving interactive chatbot experiences.
+- Understanding streaming API responses.
 
-Text editing tools
+**Notebook:** `Claude_ai_Bot_stream_response.ipynb`
 
-MCP
-	
+### 3. Prompt Engineering
 
-Model Context Protocol
+Explore how to design effective prompts to improve LLM response quality.
 
-The repository contains notebooks for these topics, plus an MCP folder. 
-GitHub
-New README file
+**Topics covered:**
 
-README_Claude_API.md
-GitHub-ready Markdown documentation
-Ready
+- System prompts.
+- User instructions.
+- Prompt structure and clarity.
+- Prompt refinement.
+- Controlling model behavior.
+- Improving response consistency.
 
-Download the new README.md
-My recommendations
+**Notebook:** `Prompt_engineering.ipynb`
 
-A few improvements I recommend for this repository:
+### 4. Tool Calling
 
-    Add a requirements.txt with verified dependencies.
+Learn how to connect LLMs with external Python functions and allow models to request tool execution.
 
-    Separate MCP examples into individual folders.
+**Topics covered:**
 
-    Add practical projects demonstrating Claude API integrations.
+- Defining tool schemas.
+- Function calling.
+- Tool selection by LLMs.
+- Executing Python functions.
+- Returning tool results to the model.
+- Integrating external APIs with LLM applications.
 
-    Include prompt evaluation examples and test cases.
+**Notebook:** `Claude_With_Tool_Calling.ipynb`
 
-    Add screenshots or sample outputs for chatbot and RAG applications.
+### 5. Multimodal AI – Image and PDF Support
 
-Important: I inspected the repository file listing and selected notebook source, but did not execute all notebooks. The README describes the available material without claiming that every example has been tested.
+Explore multimodal capabilities by passing images and PDF documents to AI models.
 
-You can replace the existing GitHub README with this file. I haven't made changes to the remote repository.
-README_Claude_API.mdDocument
-Building with the Claude API
+**Topics covered:**
 
-A hands-on collection of Python notebooks exploring how to build
-applications with Anthropic's Claude API and related LLM
-application-development concepts.
+- Image inputs.
+- PDF document processing.
+- Multimodal message structures.
+- Extracting information from visual and document inputs.
+- Building document-understanding applications.
 
-This repository covers prompt engineering, chatbot development,
-streaming responses, tool calling, Retrieval-Augmented Generation (RAG),
-multimodal inputs, text-editing tools, prompt evaluation, and Model
-Context Protocol (MCP).
+**Notebook:** `Claude_Image_&_PDF_Support_Feature.ipynb`
 
-The notebooks are intended for learning and experimentation. Some
-examples also demonstrate OpenAI-compatible clients and other model
-providers alongside Claude.
-Repository Contents
-1. Claude API Fundamentals and Applications
+### 6. AI-Powered Text Editing Tool
 
-Notebook / Folder Description
+Explore how to build a text-editing workflow using LLMs.
 
-Claude AI Chatbot Build a conversational chatbot
-using an LLM API.
+**Topics covered:**
 
-Claude AI Bot --- Streaming Explore streaming model responses Response for an interactive chat experience.
+- Tool-based text editing.
+- Processing user-provided text.
+- Connecting model responses with editing operations.
+- Building AI-assisted text workflows.
 
-Claude with Tool Define tools, provide tool schemas, Calling and connect model responses to
-Python functions. The notebook also
-demonstrates working with multiple
-API-compatible providers.
+**Notebook:** `Claude_Text_Editing_Tool.ipynb`
 
-Claude Image & PDF Experiment with image and PDF Support inputs in a model-powered
-application.
-Claude Text Editing Explore a text-editing tool Tool workflow.
-2. Prompt Engineering and Evaluation
+### 7. Retrieval-Augmented Generation (RAG)
 
-Notebook Description
+Explore how to build retrieval-based LLM applications that use external knowledge sources to generate context-aware responses.
 
-Prompt Practice writing and improving Engineering prompts for LLM applications.
+**Topics covered:**
 
-Prompt Evaluation Explore evaluating prompt outputs.
-Prompt Evaluation Practice prompt evaluation through Exercises exercises.
-3. Retrieval-Augmented Generation (RAG)
+- Document retrieval.
+- Embedding generation.
+- Vector indexing.
+- Semantic search.
+- Similarity search.
+- Custom Retriever implementation.
+- Custom VectorIndex implementation.
+- Pinecone vector database integration.
+- Retrieval and ranking techniques.
 
-Notebook Description
+**Notebook:** `RAG.ipynb`
 
-RAG Explore a retrieval pipeline,
-embeddings, vector search, and
-retrieval techniques. The notebook
-includes custom retrieval/index
-abstractions and a Pinecone
-integration.
-4. Model Context Protocol (MCP)
+### 8. Prompt Evaluation
 
-Folder Description
+Understand how to evaluate prompt performance and analyze LLM-generated outputs.
 
-MCP MCP-related learning materials and
-examples. Browse the folder for its
-available files.
-Concepts and Skills Practiced
+**Topics covered:**
 
-    Calling LLM APIs from Python
-    Building conversational applications
-    Streaming model responses
-    Prompt engineering and prompt evaluation
-    Tool/function calling and tool schemas
-    Connecting model outputs to Python functions
-    Working with image and PDF inputs
-    Building text-editing workflows
-    RAG fundamentals and retrieval pipelines
-    Embeddings and vector search
-    Vector database integration with Pinecone
-    Exploring MCP concepts
+- Prompt evaluation.
+- Evaluating model responses.
+- Comparing prompt outputs.
+- Identifying response quality issues.
+- Practicing prompt evaluation through exercises.
 
-Technology Stack
+**Notebooks:**
 
-    Python --- application development
-    Anthropic Python SDK --- Claude API integration
-    OpenAI Python SDK --- OpenAI-compatible API clients used in some
-    examples
-    Pinecone --- vector database integration in the RAG notebook
-    Jupyter Notebook / Google Colab --- interactive development
-    HTTP clients and Python standard library --- supporting API and
-    utility code
+- `prompt_eval.ipynb`
+- `exercise_prompt_eval.ipynb`
 
-Individual notebooks may use additional packages. Check the installation
-cells at the beginning of each notebook before running it.
-Getting Started
-Prerequisites
+### 9. Model Context Protocol (MCP)
 
-    Python 3.10 or later is recommended.
-    pip
-    Jupyter Notebook or JupyterLab, or a Google Colab account
-    API credentials for the provider used by the notebook
+Explore the Model Context Protocol and its role in connecting AI applications with external tools and services.
 
-1. Clone the repository
+**Topics covered:**
+
+- MCP fundamentals.
+- MCP-related implementation examples.
+- Tool integration and communication.
+
+**Directory:** `MCP/`
+
+Explore the MCP directory for individual implementation details.
+
+## 🛠️ Technology Stack
+
+| Technology           | Purpose                           |
+| -------------------- | --------------------------------- |
+| Python               | Core programming language         |
+| Anthropic Claude API | LLM integration                   |
+| Anthropic Python SDK | Claude API communication          |
+| OpenAI Python SDK    | API-compatible model integrations |
+| NVIDIA AI Endpoints  | Model and embedding integration   |
+| Pinecone             | Vector database                   |
+| Jupyter Notebook     | Interactive development           |
+| Google Colab         | Cloud-based experimentation       |
+| Python-dotenv        | Environment variable management   |
+| Requests             | HTTP API communication            |
+
+Some notebooks use additional provider-specific libraries. Refer to their individual setup cells.
+
+## 📁 Repository Structure
+
+```text
+Building-with-the-Claude-API/
+│
+├── MCP/
+│
+├── Claude_ai_Chat_Bot.ipynb
+│
+├── Claude_ai_Bot_stream_response.ipynb
+│
+├── Claude_With_Tool_Calling.ipynb
+│
+├── Claude_Image_&_PDF_Support_Feature.ipynb
+│
+├── Claude_Text_Editing_Tool.ipynb
+│
+├── Prompt_engineering.ipynb
+│
+├── prompt_eval.ipynb
+│
+├── exercise_prompt_eval.ipynb
+│
+├── RAG.ipynb
+│
+└── README.md
+```
+
+## ⚙️ Installation and Setup
+
+### Prerequisites
+
+- Python 3.10+
+- pip
+- Jupyter Notebook or JupyterLab
+- Google Colab (optional)
+- API credentials for the services used in individual notebooks.
+
+### 1. Clone the Repository
+
+```bash
 git clone https://github.com/chandupradeep18/Building-with-the-Claude-API.git
+
 cd Building-with-the-Claude-API
-2. Create a virtual environment (recommended)
+```
 
-Windows PowerShell:
+### 2. Create a Virtual Environment
+
+**Windows:**
+
+```bash
 python -m venv .venv
-.\.venv\Scripts\Activate.ps1
 
-Windows Command Prompt:
-python -m venv .venv
-.venv\Scripts\activate.bat
+.venv\Scripts\activate
+```
 
-Linux / macOS:
+**Linux / macOS:**
+
+```bash
 python3 -m venv .venv
+
 source .venv/bin/activate
-3. Install the core packages
+```
+
+### 3. Install Dependencies
+
+Install the core dependencies:
+
+```bash
 python -m pip install --upgrade pip
+
 pip install anthropic openai pinecone jupyter python-dotenv requests
+```
 
-Some notebooks may require extra libraries. Install those as indicated
-in the notebook's own setup cells.
-4. Configure API credentials
+Some notebooks require additional packages. Check the installation cells inside each notebook before execution.
 
-The examples use API credentials for services such as Anthropic, NVIDIA,
-Nebius, Ollama, and Pinecone. You only need credentials for the
-providers and services used by the notebook you are running.
+### 4. Configure API Keys
 
-For local development, create a .env file in the project directory:
+Create a `.env` file in the project root.
+
+```env
 ANTHROPIC_API_KEY=your_anthropic_api_key
 OPENAI_API_KEY=your_openai_api_key
 NVIDIA_API_KEY=your_nvidia_api_key
 NEBIUS_API_KEY=your_nebius_api_key
 PINECONE_API_KEY=your_pinecone_api_key
+```
 
-Load only the variables you need in your Python code. Adapt the variable
-names to the notebook's implementation.
+**Important:**
 
-For Google Colab notebooks, configure secrets through Colab's Secrets
-panel when the notebook uses google.colab.userdata.
+- Configure only the API keys required by the notebook you are running.
+- Some notebooks use Google Colab Secrets instead of environment variables.
+- Follow the corresponding notebook's authentication implementation.
+- Never upload API keys or `.env` files to GitHub.
 
-Security: Never commit API keys, .env files, access tokens, or
-other credentials to GitHub. Add .env to .gitignore.
-5. Run the notebooks
+Add the following to `.gitignore`:
 
-Start Jupyter:
+```gitignore
+.env
+.venv/
+__pycache__/
+.ipynb_checkpoints/
+```
+
+### 5. Start Jupyter Notebook
+
+```bash
 jupyter notebook
+```
 
-Or use JupyterLab:
+Alternatively:
+
+```bash
 jupyter lab
+```
 
-You can also open the notebooks in Google Colab using the links below.
-Suggested Learning Path
+Open the required notebook and execute its cells in sequence.
 
-If you are new to building LLM applications, follow this sequence:
+## 📚 Suggested Learning Path
 
-    Prompt Engineering --- understand how prompts influence model
-    outputs.
-    Claude AI Chatbot --- make your first conversational
-    application.
-    Streaming Response --- learn how to stream generated output.
-    Tool Calling --- connect an LLM to Python functions and external
-    tools.
-    Image & PDF Support --- experiment with multimodal inputs.
-    Text Editing Tool --- explore tool-assisted text workflows.
-    RAG --- learn retrieval, embeddings, and vector search.
-    Prompt Evaluation --- evaluate and improve prompt quality.
-    MCP --- explore the MCP examples in the repository.
+For someone starting with LLM application development, the following sequence is recommended:
 
-Open Notebooks in Google Colab
+| Order | Module              | Learning Objective                    |
+| ----- | ------------------- | ------------------------------------- |
+| 1     | Prompt Engineering  | Understand effective prompting        |
+| 2     | Claude AI Chatbot   | Build a conversational AI application |
+| 3     | Streaming Responses | Implement streaming generation        |
+| 4     | Tool Calling        | Connect LLMs with external functions  |
+| 5     | Image & PDF Support | Explore multimodal capabilities       |
+| 6     | Text Editing Tool   | Build tool-assisted AI workflows      |
+| 7     | RAG                 | Understand retrieval and embeddings   |
+| 8     | Prompt Evaluation   | Evaluate LLM response quality         |
+| 9     | MCP                 | Explore standardized tool integration |
 
-Notebook Open
+## 🎯 Learning Objectives
 
-Claude AI Chatbot Open in Colab
+Through these implementations, I am developing practical knowledge in:
 
-Streaming Response Open in Colab
+- Integrating LLM APIs with Python.
+- Building conversational AI applications.
+- Managing conversation context and history.
+- Prompt Engineering and optimization.
+- Function and Tool Calling.
+- Multimodal AI applications.
+- Retrieval-Augmented Generation.
+- Embeddings and vector search.
+- Vector database integration.
+- Prompt evaluation and testing.
+- Model Context Protocol.
 
-Tool Calling Open in Colab
+## 🔮 Future Improvements
 
-Image & PDF Support Open in
-Colab
+- Develop end-to-end RAG applications.
+- Implement advanced retrieval strategies.
+- Explore hybrid search and reranking.
+- Integrate LangChain and LangGraph.
+- Build multi-agent applications.
+- Implement MCP-based AI agents.
+- Add automated evaluation pipelines.
+- Explore Guardrails and responsible AI.
+- Build production-ready LLM applications.
 
-Text Editing Tool Open in Colab
+## 📖 References
 
-Prompt Engineering Open in Colab
+- [Anthropic Documentation](https://docs.anthropic.com/)
+- [Anthropic API Documentation](https://docs.anthropic.com/en/api/overview)
+- [Anthropic Courses – Skilljar](https://anthropic.skilljar.com/)
+- [OpenAI API Documentation](https://platform.openai.com/docs/)
+- [Pinecone Documentation](https://docs.pinecone.io/)
+- [Model Context Protocol](https://modelcontextprotocol.io/)
+- [Jupyter Documentation](https://docs.jupyter.org/)
 
-Prompt Evaluation Open in Colab
+## 🤝 Contributions
 
-Prompt Evaluation Exercises Open in Colab
-RAG Open in Colab
-Important Notes
+Suggestions, improvements, and contributions are welcome.
 
-    API access may require a paid account, credits, or provider-specific
-    setup.
-    Model names and API endpoints can change. Check the relevant
-    provider's documentation if an example stops working.
-    The notebooks include provider-specific configuration. Do not assume
-    every notebook requires every API key listed above.
-    The repository is a learning collection; review each notebook's code
-    and dependencies before running it.
-    No license information was visible in the repository at the time
-    this README was prepared. Add a license file if you intend to
-    specify reuse and distribution terms.
+Feel free to fork this repository, explore the implementations, and submit pull requests.
 
-Contributing
-
-Suggestions, fixes, and learning improvements are welcome. Fork the
-repository, create a branch for your changes, and submit a pull request.
-
-If this repository helps you learn about Claude API and LLM application
-development, consider giving it a ⭐.
+---
 
 
-)
+
